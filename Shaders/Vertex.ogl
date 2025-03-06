@@ -1,0 +1,12 @@
+#version 460 core
+
+layout(location = 0) in vec3 IPosition;
+
+layout(location = 1) uniform mat4 UProjection;
+layout(location = 2) uniform mat4 UView;
+layout(location = 3) uniform mat4 UModel;
+
+void main()
+{
+    gl_Position = UProjection * UView * UModel * vec4(IPosition , 1.0F);
+}

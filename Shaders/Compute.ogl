@@ -1,0 +1,36 @@
+#version 460 core
+
+layout(local_size_x = 1 , local_size_y = 1 , local_size_z = 1) in;
+
+layout(binding = 0) buffer TInput
+{
+    float GInput[];
+};
+
+layout(binding = 1) buffer TOutput
+{
+    int GOutput[];
+};
+
+void main()
+{
+    /*
+    bool LSwap;
+    do
+    {
+        LSwap = false;
+        for(uint LIndex = USize / gl_NumWorkGroups.x * gl_WorkGroupID.x + 1 ; LIndex < USize / gl_NumWorkGroups.x * (gl_WorkGroupID.x + 1) ; LIndex++)
+        {
+            if(GArray[LIndex - 1] > GArray[LIndex])
+            {
+                double LBuffer = GArray[LIndex - 1];
+                GArray[LIndex - 1] = GArray[LIndex];
+                GArray[LIndex] = LBuffer;
+                LSwap = true;
+            }
+        }
+    }
+    while(LSwap);
+    */
+    GOutput[0] = int(GInput[0]);
+}

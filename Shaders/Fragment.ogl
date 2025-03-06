@@ -1,0 +1,10 @@
+#version 460 core
+
+out vec4 OColor;
+
+layout(location = 4) uniform vec4 UColor;
+
+void main()
+{
+    OColor = UColor;
+}

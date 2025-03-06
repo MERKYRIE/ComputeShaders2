@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClInclude Include="_Input\_\ComputeShaders2.hpp" />
+    <ClInclude Include="_Input\_\ComputeShaders2\Debug.hpp">
+      <Filter>ComputeShaders2</Filter>
+    </ClInclude>
+    <ClInclude Include="_Input\_\ComputeShaders2\Video.hpp">
+      <Filter>ComputeShaders2</Filter>
+    </ClInclude>
+    <ClInclude Include="_Input\_\ComputeShaders2\Video\Shader.hpp">
+      <Filter>ComputeShaders2\Video</Filter>
+    </ClInclude>
+    <ClInclude Include="_Input\_\ComputeShaders2\Video\Program.hpp">
+      <Filter>ComputeShaders2\Video</Filter>
+    </ClInclude>
+    <ClInclude Include="_Input\_\ComputeShaders2\Video\Uniform.hpp">
+      <Filter>ComputeShaders2\Video</Filter>
+    </ClInclude>
+    <ClInclude Include="_Input\_\ComputeShaders2\Space.hpp">
+      <Filter>ComputeShaders2</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="_Input\_\ComputeShaders2.cpp" />
+    <ClCompile Include="_Input\_\ComputeShaders2\Debug.cpp">
+      <Filter>ComputeShaders2</Filter>
+    </ClCompile>
+    <ClCompile Include="_Input\_\ComputeShaders2\Video.cpp">
+      <Filter>ComputeShaders2</Filter>
+    </ClCompile>
+    <ClCompile Include="_Input\_\ComputeShaders2\Video\Shader.cpp">
+      <Filter>ComputeShaders2\Video</Filter>
+    </ClCompile>
+    <ClCompile Include="_Input\_\ComputeShaders2\Video\Program.cpp">
+      <Filter>ComputeShaders2\Video</Filter>
+    </ClCompile>
+    <ClCompile Include="_Input\_\ComputeShaders2\Video\Uniform.cpp">
+      <Filter>ComputeShaders2\Video</Filter>
+    </ClCompile>
+    <ClCompile Include="_Input\_\ComputeShaders2\Space.cpp">
+      <Filter>ComputeShaders2</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="ComputeShaders2">
+      <UniqueIdentifier>{5989c5e5-495d-4a03-8b8c-606c45740ef0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ComputeShaders2\Video">
+      <UniqueIdentifier>{f2fd914d-e145-4041-8fd6-98a8f86076bf}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
