@@ -8,7 +8,7 @@ namespace NComputeShaders2::NComputeShaders2
         GDebug->ICode(SDL_GL_SetAttribute(SDL_GL_CONTEXT_MAJOR_VERSION , 4));
         GDebug->ICode(SDL_GL_SetAttribute(SDL_GL_CONTEXT_MINOR_VERSION , 6));
         GDebug->ICode(SDL_GL_SetAttribute(SDL_GL_CONTEXT_PROFILE_MASK , SDL_GL_CONTEXT_PROFILE_CORE));
-        GDebug->IHandle(FWindow = SDL_CreateWindow("ComputeShaders2" , SDL_WINDOWPOS_CENTERED , SDL_WINDOWPOS_CENTERED , 1920 , 1080 , SDL_WINDOW_OPENGL));
+        GDebug->IHandle(FWindow = SDL_CreateWindow("ComputeShaders2" , SDL_WINDOWPOS_CENTERED , SDL_WINDOWPOS_CENTERED , 1280 , 720 , SDL_WINDOW_OPENGL));
         GDebug->IHandle(FContext = SDL_GL_CreateContext(FWindow));
         GDebug->ICode(SDL_GL_SetSwapInterval(0));
         GDebug->IAssert(gladLoadGL(reinterpret_cast<GLADloadfunc>(SDL_GL_GetProcAddress)) != 40006);

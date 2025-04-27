@@ -7,30 +7,12 @@ layout(binding = 0) buffer TInput
     float GInput[];
 };
 
-layout(binding = 1) buffer TOutput
+layout(binding = 0) buffer TOutput
 {
     int GOutput[];
 };
 
 void main()
 {
-    /*
-    bool LSwap;
-    do
-    {
-        LSwap = false;
-        for(uint LIndex = USize / gl_NumWorkGroups.x * gl_WorkGroupID.x + 1 ; LIndex < USize / gl_NumWorkGroups.x * (gl_WorkGroupID.x + 1) ; LIndex++)
-        {
-            if(GArray[LIndex - 1] > GArray[LIndex])
-            {
-                double LBuffer = GArray[LIndex - 1];
-                GArray[LIndex - 1] = GArray[LIndex];
-                GArray[LIndex] = LBuffer;
-                LSwap = true;
-            }
-        }
-    }
-    while(LSwap);
-    */
-    GOutput[0] = int(GInput[0]);
+    GOutput[gl_WorkGroupID.x] = int(GInput[gl_WorkGroupID.x]);
 }
